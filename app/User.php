@@ -39,6 +39,6 @@ class User extends Authenticatable
 
     public function hasRole()
     {
-        return $this->role->name;
+        return $this->role;
     } 
 }

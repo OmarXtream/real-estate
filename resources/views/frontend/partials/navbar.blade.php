@@ -54,15 +54,15 @@
 
                         <ul id="dropdown-auth-frontend" class="dropdown-content">
                             <li>
-                                @if(Auth::user()->role->id == 1)
+                                @if(Auth::user()->role_id == 1)
                                     <a href="{{ route('admin.dashboard') }}" class="indigo-text">
                                         <i class="material-icons"></i>الملف الشخصي
                                     </a>
-                                @elseif(Auth::user()->role->id == 2)
+                                @elseif(Auth::user()->role_id == 2)
                                     <a href="{{ route('agent.dashboard') }}" class="indigo-text">
                                         <i class="material-icons"></i>الملف الشخصي
                                     </a>
-                                @elseif(Auth::user()->role->id == 3)
+                                @elseif(Auth::user()->role_id == 3)
                                     <a href="{{ route('user.dashboard') }}" class="indigo-text">
                                         <i class="material-icons"></i>الملف الشخصي
                                     </a>
@@ -72,7 +72,7 @@
                                 <a class="dropdownitem indigo-text" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">
-                                    <i class="material-icons"></i>{{ __('Logout') }}
+                                    <i class="material-icons"></i>خروج
                                 </a>
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
