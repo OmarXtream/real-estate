@@ -145,7 +145,7 @@
                                 </div>
                             </div>
 
-                            <div class="row">
+                            {{-- <div class="row">
                                 <div class="input-field col s6">
                                     <i class="material-icons prefix">map</i>
                                     <input id="location_latitude" name="location_latitude" type="text" value="{{ $property->location_latitude }}" class="validate">
@@ -156,7 +156,7 @@
                                     <input id="location_longitude" name="location_longitude" type="text" value="{{ $property->location_longitude }}" class="validate">
                                     <label for="location_longitude">Longitude</label>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <div class="row">
                                 <div class="input-field col s12">
@@ -183,13 +183,13 @@
                                 </div>
                             </div>
 
-                            <div class="row">
+                            {{-- <div class="row">
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">place</i>
                                     <textarea id="nearby" name="nearby" class="materialize-textarea">{{ $property->nearby }}</textarea>
                                     <label for="nearby">Nearby</label>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             @if($property->gallery)
                             <div class="row m-b-0">

@@ -105,10 +105,7 @@ class PropertyController extends Controller
         $property->description          = $request->description;
         $property->video                = $request->video;
         $property->floor_plan           = $imagefloorplan;
-      //  $property->location_latitude    = $request->location_latitude;
-       
-        //$property->location_longitude   = $request->location_longitude;
-        $property->nearby               = $request->nearby;
+
         $property->save();
 
         $property->features()->attach($request->features);
@@ -244,9 +241,7 @@ class PropertyController extends Controller
         $property->description  = $request->description;
         $property->video        = $request->video;
         $property->floor_plan   = $imagefloorplan;
-        $p//roperty->location_latitude  = $request->location_latitude;
-        //$property->location_longitude = $request->location_longitude;
-        $property->nearby             = $request->nearby;
+
         $property->save();
 
         $property->features()->sync($request->features);

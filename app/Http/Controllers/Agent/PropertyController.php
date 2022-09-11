@@ -49,8 +49,6 @@ class PropertyController extends Controller
             'image'     => 'required|image|mimes:jpeg,jpg,png',
             'floor_plan'=> 'image|mimes:jpeg,jpg,png',
             'description'        => 'required',
-            'location_latitude'  => 'required',
-            'location_longitude' => 'required',
         ]);
 
         $image = $request->file('image');
@@ -104,9 +102,6 @@ class PropertyController extends Controller
         $property->video              = $request->video;
         $property->floor_plan         = $imagefloorplan;
         $property->description        = $request->description;
-        $property->location_latitude  = $request->location_latitude;
-        $property->location_longitude = $request->location_longitude;
-        $property->nearby             = $request->nearby;
         $property->save();
 
         $property->features()->attach($request->features);

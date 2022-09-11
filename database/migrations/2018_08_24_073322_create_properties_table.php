@@ -32,9 +32,9 @@ class CreatePropertiesTable extends Migration
             $table->text('description');
             $table->string('video')->nullable();
             $table->string('floor_plan')->nullable();
-            $table->string('location_latitude');
-            $table->string('location_longitude');
-            $table->text('nearby')->nullable();
+            // $table->string('location_latitude');
+            // $table->string('location_longitude');
+            // $table->text('nearby')->nullable();
             $table->timestamps();
         });
     }

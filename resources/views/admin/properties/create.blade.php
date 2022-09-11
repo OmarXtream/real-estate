@@ -86,10 +86,10 @@
                     </div>
 
                     <hr>
-                    <div class="form-group">
+                    {{-- <div class="form-group">
                         <label for="tinymce-nearby">Nearby</label>
                         <textarea name="nearby" id="tinymce-nearby">{{old('nearby')}}</textarea>
-                    </div>
+                    </div> --}}
 
                 </div>
             </div>
@@ -147,7 +147,7 @@
                         <div class="help-info">Youtube Link</div>
                     </div>
 
-                    <div class="clearfix">
+                    {{-- <div class="clearfix">
                         <h5>Google Map</h5>
                         <div class="form-group">
                             <div class="form-line">
@@ -161,7 +161,7 @@
                                 <label class="form-label">Longitude</label>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     
                 </div>
             </div>
