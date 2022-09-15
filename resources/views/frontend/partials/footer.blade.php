@@ -58,7 +58,7 @@
             @if(isset($footersettings[0]) && $footersettings[0]['footer'])
                 {{ $footersettings[0]['footer'] }}
             @else
-                © 2022 Alrawabiestates.
+                © 2022 Developer puzzle.
             @endif
 
             @if(isset($footersettings[0]) && $footersettings[0]['facebook'])
