@@ -12,6 +12,14 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
+
+                <li class="{{ Request::is('admin/InfoForm') ? 'active' : '' }}">
+                    <a href="{{ route('admin.InfoForm') }}">
+                        <i class="material-icons">spa</i>
+                        <span>طلبات عقارية</span>
+                    </a>
+                </li>
+
                 <li class="{{ Request::is('admin/sliders*') ? 'active' : '' }}">
                     <a href="{{ route('admin.sliders.index') }}">
                         <i class="material-icons">burst_mode</i>

@@ -54,7 +54,7 @@
 
                     <div class="card" id="comments">
                         <div class="p-15 grey lighten-4">
-                            <h5 class="m-0">{{ $post->comments_count }} Comments</h5>
+                            <h5 class="m-0">{{ $post->comments_count }} تعليق</h5>
                         </div>
                         <div class="single-narebay p-15">
 
@@ -119,8 +119,8 @@
 
                             @guest 
                                 <div class="comment-login">
-                                    <h6>Please Login to comment</h6>
-                                    <a href="{{ route('login') }}" class="btn indigo">Login</a>
+                                    <h6>سجل دخولك لتعليق</h6>
+                                    <a href="{{ route('login') }}" class="btn indigo">دخول</a>
                                 </div>
                             @endguest
                             

@@ -19,28 +19,28 @@
                         <div class="searchbar">
                             <div class="input-field col s12">
                                 <input type="text" name="city" id="autocomplete-input-sidebar" class="autocomplete custominputbox" autocomplete="off">
-                                <label for="autocomplete-input-sidebar">Enter City or State</label>
+                                <label for="autocomplete-input-sidebar">أدخل المدينة او المنطقة</label>
                             </div>
     
                             <div class="input-field col s12">
                                 <select name="type" class="browser-default">
-                                    <option value="" disabled selected>Choose Type</option>
-                                    <option value="apartment">Apartment</option>
-                                    <option value="house">House</option>
+                                    <option value="" disabled selected>إختر النوع</option>
+                                    <option value="apartment">شقة</option>
+                                    <option value="house">منزل</option>
                                 </select>
                             </div>
     
                             <div class="input-field col s12">
                                 <select name="purpose" class="browser-default">
-                                    <option value="" disabled selected>Choose Purpose</option>
-                                    <option value="rent">Rent</option>
-                                    <option value="sale">Sale</option>
+                                    <option value="" disabled selected>إختر الغرض</option>
+                                    <option value="rent">إيجار</option>
+                                    <option value="sale">بيع</option>
                                 </select>
                             </div>
     
                             <div class="input-field col s12">
                                 <select name="bedroom" class="browser-default">
-                                    <option value="" disabled selected>Choose Bedroom</option>
+                                    <option value="" disabled selected>اختر غرف النوم</option>
                                     @foreach($bedroomdistinct as $bedroom)
                                         <option value="{{$bedroom->bedroom}}">{{$bedroom->bedroom}}</option>
                                     @endforeach
@@ -49,7 +49,7 @@
 
                             <div class="input-field col s12">
                                 <select name="bathroom" class="browser-default">
-                                    <option value="" disabled selected>Choose Bathroom</option>
+                                    <option value="" disabled selected>اختر دورات المياة</option>
                                     @foreach($bathroomdistinct as $bathroom)
                                         <option value="{{$bathroom->bathroom}}">{{$bathroom->bathroom}}</option>
                                     @endforeach
@@ -58,22 +58,22 @@
     
                             <div class="input-field col s12">
                                 <input type="number" name="minprice" id="minprice" class="custominputbox">
-                                <label for="minprice">Min Price</label>
+                                <label for="minprice">أقل سعر</label>
                             </div>
     
                             <div class="input-field col s12">
                                 <input type="number" name="maxprice" id="maxprice" class="custominputbox">
-                                <label for="maxprice">Max Price</label>
+                                <label for="maxprice">أعلى سعر</label>
                             </div>
     
                             <div class="input-field col s12">
                                 <input type="number" name="minarea" id="minarea" class="custominputbox">
-                                <label for="minarea">Floor Min Area</label>
+                                <label for="minarea">أقل مساحة أرضية</label>
                             </div>
     
                             <div class="input-field col s12">
                                 <input type="number" name="maxarea" id="maxarea" class="custominputbox">
-                                <label for="maxarea">Floor Max Area</label>
+                                <label for="maxarea">أعلى مساحة أرضية</label>
                             </div>
                             
                             <div class="input-field col s12">
@@ -81,14 +81,14 @@
                                     <label>
                                         <input type="checkbox" name="featured">
                                         <span class="lever"></span>
-                                        Featured
+                                        مميزات
                                     </label>
                                 </div>
                             </div>
                             <div class="input-field col s12">
                                 <button class="btn btnsearch indigo" type="submit">
                                     <i class="material-icons left">search</i>
-                                    <span>SEARCH</span>
+                                    <span>بحث</span>
                                 </button>
                             </div>
                         </div>
@@ -130,15 +130,15 @@
                                 <div class="card-action property-action clearfix">
                                     <span class="btn-flat">
                                         <i class="material-icons">check_box</i>
-                                        Bedroom: <strong>{{ $property->bedroom}}</strong> 
+                                        غرف نوم: <strong>{{ $property->bedroom}}</strong> 
                                     </span>
                                     <span class="btn-flat">
                                         <i class="material-icons">check_box</i>
-                                        Bathroom: <strong>{{ $property->bathroom}}</strong> 
+                                        دورات مياه: <strong>{{ $property->bathroom}}</strong> 
                                     </span>
                                     <span class="btn-flat">
                                         <i class="material-icons">check_box</i>
-                                        Area: <strong>{{ $property->area}}</strong> Sq Ft
+                                        منطقة: <strong>{{ $property->area}}</strong> Sq Ft
                                     </span>
                                     <span class="btn-flat">
                                         <i class="material-icons">comment</i>

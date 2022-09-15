@@ -69,15 +69,15 @@
                             <a class="btn-floating btn-small disabled"><i class="material-icons">star</i></a>
                         @endif
 
-                        <span class="btn btn-small disabled b-r-20">Bedroom: {{ $property->bedroom}} </span>
-                        <span class="btn btn-small disabled b-r-20">Bathroom: {{ $property->bathroom}} </span>
-                        <span class="btn btn-small disabled b-r-20">Area: {{ $property->area}} Sq Ft</span>
+                        <span class="btn btn-small disabled b-r-20">غرف نوم: {{ $property->bedroom}} </span>
+                        <span class="btn btn-small disabled b-r-20">دورات مياه: {{ $property->bathroom}} </span>
+                        <span class="btn btn-small disabled b-r-20">منطقة: {{ $property->area}} Sq Ft</span>
                     </div>
                 </div>
                 <div class="col s12 m4">
                     <div>
                         <h4 class="left">${{ $property->price }}</h4>
-                        <button type="button" class="btn btn-small m-t-25 right disabled b-r-20"> For {{ $property->purpose }}</button>
+                        <button type="button" class="btn btn-small m-t-25 right disabled b-r-20"> قيمة {{ $property->purpose }}</button>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@
 
                     <div class="card-no-box-shadow card">
                         <div class="p-15 grey lighten-4">
-                            <h5 class="m-0">Floor Plan</h5>
+                            <h5 class="m-0">تخطيط الارض</h5>
                         </div>
                         <div class="card-image">
                             @if(Storage::disk('public')->exists('property/'.$property->floor_plan) && $property->floor_plan)
@@ -125,7 +125,7 @@
 
                     <div class="card-no-box-shadow card">
                         <div class="p-15 grey lighten-4">
-                            <h5 class="m-0">Location</h5>
+                            <h5 class="m-0">الموقع</h5>
                         </div>
                         <div class="card-image">
                             <div id="map"></div>
@@ -135,7 +135,7 @@
                     @if($videoembed)
                         <div class="card-no-box-shadow card">
                             <div class="p-15 grey lighten-4">
-                                <h5 class="m-0">Video</h5>
+                                <h5 class="m-0">مقطع </h5>
                             </div>
                             <div class="card-image center m-t-10">
                                 {!! $videoembed !!}
@@ -145,17 +145,8 @@
 
                     <div class="card-no-box-shadow card">
                         <div class="p-15 grey lighten-4">
-                            <h5 class="m-0">Near By</h5>
-                        </div>
-                        <div class="single-narebay p-15">
-                            {!! $property->nearby !!}
-                        </div>
-                    </div>
-
-                    <div class="card-no-box-shadow card">
-                        <div class="p-15 grey lighten-4">
                             <h5 class="m-0">
-                                {{ $property->comments_count }} Comments
+                                {{ $property->comments_count }} تعليقات
                                 @auth
                                 <div class="right" id="rateYo"></div>
                                 @endauth
@@ -209,7 +200,7 @@
 
                             @auth
                                 <div class="comment-box">
-                                    <h6>Leave a comment</h6>
+                                    <h6>اترك تعليق</h6>
                                     <form action="{{ route('property.comment',$property->id) }}" method="POST">
                                         @csrf
                                         <input type="hidden" name="parent" value="0">
@@ -222,8 +213,8 @@
 
                             @guest 
                                 <div class="comment-login">
-                                    <h6>Please Login to comment</h6>
-                                    <a href="{{ route('login') }}" class="btn indigo">Login</a>
+                                    <h6>سجل الدخول لترك تعليق</h6>
+                                    <a href="{{ route('login') }}" class="btn indigo">دخول</a>
                                 </div>
                             @endguest
                             

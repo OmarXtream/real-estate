@@ -6,7 +6,7 @@
                 @if(isset($footersettings[0]) && $footersettings[0]['aboutus'])
                     <p class="grey-text text-lighten-4">{{ $footersettings[0]['aboutus'] }}</p>
                 @else
-                    <p class="grey-text text-lighten-4">وصف الشركة العقارية هنا.</p>
+                    <p class="grey-text text-lighten-4">إن عمارة الأرض من أولى المهام التي كلف بها الله عز وجل الإنسان ونحن في شركة الروابي العقارية جعلنا هذا التكليف تشريفاً لنا أن نكون ممن يعمرون الأرض من خلال كيان عقاري ناجح يدار برؤية اقتصادية وجدوى استثمارية تحقق المعادلات الصعبة للعمل الناجح.</p>
                 @endif
             </div>
             <div class="col m6 s12">
@@ -58,7 +58,7 @@
             @if(isset($footersettings[0]) && $footersettings[0]['footer'])
                 {{ $footersettings[0]['footer'] }}
             @else
-                © 2018 Developer Canvas Studio.
+                © 2022 Alrawabiestates.
             @endif
 
             @if(isset($footersettings[0]) && $footersettings[0]['facebook'])

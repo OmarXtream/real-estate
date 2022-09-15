@@ -4,6 +4,11 @@
 Route::get('/', 'FrontpageController@index')->name('home');
 Route::get('/slider', 'FrontpageController@slider')->name('slider.index');
 
+Route::get('/InfoForm', 'InfoFormController@index')->name('InfoForm');
+Route::post('/InfoForm', 'InfoFormController@Create')->name('InfoForm.create');
+
+
+
 Route::get('/search', 'FrontpageController@search')->name('search');
 
 Route::get('/property', 'PagesController@properties')->name('property');
@@ -67,6 +72,10 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin','middleware'=>['auth','admi
 
     Route::get('changepassword','DashboardController@changePassword')->name('changepassword');
     Route::post('changepassword','DashboardController@changePasswordUpdate')->name('changepassword.update');
+
+
+    Route::get('InfoForm','InfoFormController@index')->name('InfoForm');
+
 
 });
 

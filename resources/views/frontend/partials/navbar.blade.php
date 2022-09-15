@@ -2,14 +2,16 @@
     <nav class="indigo darken-4">
         <div class="container">
             <div class="nav-wrapper">
-
+                الروابي للتطوير العقاري
                 <a href="{{ route('home') }}" class="brand-logo">
-                    @if(isset($navbarsettings[0]) && $navbarsettings[0]['name'])
+                    <img src="{{asset('frontend/images/logo.png')}}" width="100" height="65">
+                    
+                    {{-- @if(isset($navbarsettings[0]) && $navbarsettings[0]['name'])
                         {{ $navbarsettings[0]['name'] }}
                     @else
                         شركة العقار
-                    @endif
-                    <i class="material-icons left">location_city</i>
+                    @endif --}}
+                    {{-- <i class="material-icons left">location_city</i> --}}
                 </a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                     <i class="material-icons">القائمة</i>
@@ -19,6 +21,10 @@
 
                     <li class="{{ Request::is('contact') ? 'active' : '' }}">
                         <a href="{{ route('contact') }}">تواصل معنا</a>
+                    </li>
+
+                    <li class="{{ Request::is('InfoForm*') ? 'active' : '' }}">
+                        <a href="{{ route('InfoForm') }}">حلول عقارية</a>
                     </li>
 
                     <li class="{{ Request::is('blog*') ? 'active' : '' }}">
