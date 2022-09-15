@@ -48,8 +48,8 @@
                     </li>
 
                     @guest
-                        <li><a href="{{ route('login') }}"><i class="material-icons">الدخول</i></a></li>
-                        <li><a href="{{ route('register') }}"><i class="material-icons">التسجيل</i></a></li>
+                        <li><a href="{{ route('login') }}"><i class="material-icons">input</i></a></li>
+                        <li><a href="{{ route('register') }}"><i class="material-icons">person_add</i></a></li>
                     @else
                         <li>
                             <a class="dropdown-trigger" href="#!" data-target="dropdown-auth-frontend">
