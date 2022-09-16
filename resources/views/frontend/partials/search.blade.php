@@ -11,7 +11,7 @@
                     <div class="searchbar">
                         <div class="input-field col s12 m3">
                             <input type="text" name="city" id="autocomplete-input" class="autocomplete custominputbox" autocomplete="off">
-                            <label for="autocomplete-input">اكتب المدينة او المنطقة</label>
+                            <label for="autocomplete-input" style="direction: rtl;text-align:center">اكتب المدينة او المنطقة</label>
                         </div>
 
                         <div class="input-field col s12 m2">
